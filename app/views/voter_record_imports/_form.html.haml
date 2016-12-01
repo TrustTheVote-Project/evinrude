@@ -1,0 +1,4 @@
+= bootstrap_form_for @voter_record_import do |f|
+  = f.file_field :voter_record_csv, label: "Voter Record CSV"
+  = f.select :state_abbr, options_for_select(us_states), label: "State"
+  = f.submit "Upload"

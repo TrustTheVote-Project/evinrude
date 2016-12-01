@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_name: Evinrude
+  app_description: |
+    <p>An <strong>HTML</strong> description of the app</p>
+    <p>With multiple paragraphs</p>
+  app_stats: "%{unique_state_count} states have imported %{record_count} registrants using %{import_count} valid import files"
+
+  voter_record_import:
+    success: "Successful Import"
+    failure: "Failed Import"
+    invalid_file: "FirstName, LastName and RegistrationAddress column must be present in the CSV"

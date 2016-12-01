@@ -1,0 +1,7 @@
+class VoterRegistration < ApplicationRecord
+
+
+
+
+
+end

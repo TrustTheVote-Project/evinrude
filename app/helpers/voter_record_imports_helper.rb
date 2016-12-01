@@ -1,0 +1,2 @@
+module VoterRecordImportsHelper
+end
