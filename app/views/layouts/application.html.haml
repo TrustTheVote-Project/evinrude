@@ -8,8 +8,13 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
     = csrf_meta_tags
   %body
+    #watermark
     %header
       = render 'layouts/navigation'
+      .container
+        .row
+          .col-xs-6.col-md-3
+            = image_tag 'oset_ttv_logo_color_transparent_160916.png', class: 'logo'
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield

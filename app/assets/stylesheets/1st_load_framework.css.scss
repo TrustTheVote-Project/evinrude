@@ -2,6 +2,23 @@
 // Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
 @import "bootstrap";
 
+body {
+  padding-bottom: 100px;
+}
+
+#watermark {
+  background: asset-url('demoWatermark.png') white;
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 0;
+  opacity: 0.25;
+}
+header, main {
+  position: relative;
+  z-index: 1;
+}
+
+
 // make all images responsive by default
 img {
   @extend .img-fluid;
@@ -10,7 +27,8 @@ img {
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+  float: right;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -26,6 +44,12 @@ img {
 form {
   .has-error {
     background: #f2dede;
+  }
+  .help-block {
+    display: block;
+    font-size: .9em;
+    margin-top: .1em;
+    font-weight: bold;
   }
 }
 
@@ -49,4 +73,8 @@ main {
 section {
   @extend .row;
   margin-top: 20px;
+}
+
+#run-report, #new-import {
+  margin-top: 2em;
 }

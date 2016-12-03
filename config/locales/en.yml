@@ -20,12 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_name: Evinrude
+  app_name: Verity
   app_description: |
     <p>An <strong>HTML</strong> description of the app</p>
     <p>With multiple paragraphs</p>
   app_stats: "%{unique_state_count} states have imported %{record_count} registrants using %{import_count} valid import files"
-
+  matching_report:
+    header: Detect matches and generate report
+    button: Run Matching Report
   voter_record_import:
     success: "Successful Import"
     failure: "Failed Import"

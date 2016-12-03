@@ -7,8 +7,11 @@
   #import_stats
     %p= t('app_stats', import_count: @count, unique_state_count: @unique_state_count, record_count: @record_count)
   
-  #new_import.row
-    .col-xs-12
+  .row
+    .col-xs-12.col-md-6#new-import
       %h3 Upload new voter records file    
-    .col-xs-12.col-md-6
       = render 'form'
+    .col-xs-12.col-md-6#run-report
+      %h3= t('matching_report.header')
+      %button
+        = t('matching_report.button') 

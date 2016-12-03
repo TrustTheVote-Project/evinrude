@@ -7,7 +7,8 @@ class VoterRecordImportsController < ApplicationController
   
   def create
     @voter_record_import = VoterRecordImport.new(import_params)
-    if @voter_record_import.save && @voter_record_import.valid_file
+    # TODO file errors should change to mark the record as not-valid
+    if !@voter_record_import.errors.any? && @voter_record_import.save && @voter_record_import.valid_file
       flash[:notice]= t('voter_record_import.success')
       redirect_to action: :index
     else

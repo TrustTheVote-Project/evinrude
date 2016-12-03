@@ -37,6 +37,8 @@ class VoterRecordImport < ApplicationRecord
     else
       self.valid_file = false
     end
+  rescue Exception=>e
+    errors.add(:voter_record_csv, "File can not be read. Please upload a valid CSV file.")
   end
   
   def valid_headers?(row)
