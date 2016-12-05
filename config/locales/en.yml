@@ -24,7 +24,7 @@ en:
   app_description: |
     <p>Verity enables voter list managers to cross check their voter list with those of others, typically in a cross-state matching process. Verity is a service App as part of the Registrar subsystem of <a href="http://bit.ly/OSETosetf">ElectOS</a>&trade;.  Verity will be available as a secure cloud-based service or stand-alone software for local deployment within a State’s electoral I.T. infrastructure.</p>
   #app_stats: "%{unique_state_count} states have imported %{record_count} registrants using %{import_count} valid import files"
-  app_states: "%{unique_state_count} states have submitted valid Voter File Extracts"
+  app_stats: "%{unique_state_count} states have submitted valid Voter File Extracts"
   matching_report:
     header: Run Matching and Generate Reports
     button: Run

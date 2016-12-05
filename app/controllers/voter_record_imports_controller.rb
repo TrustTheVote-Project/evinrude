@@ -1,7 +1,6 @@
 class VoterRecordImportsController < ApplicationController
   
   def index
-    get_stats
     @voter_record_import = VoterRecordImport.new
   end
   
@@ -26,14 +25,6 @@ class VoterRecordImportsController < ApplicationController
   
   private
   
-  def get_stats
-    valid_imports = VoterRecordImport.valid_file
-    @count = valid_imports.count
-    @record_count = valid_imports.sum(:record_count)
-    unique_states = valid_imports.pluck(:state_abbr).uniq
-    @unique_state_count = unique_states.size
-    
-  end
   
   def import_params
     params.require(:voter_record_import).permit(:voter_record_csv, :state_abbr)
