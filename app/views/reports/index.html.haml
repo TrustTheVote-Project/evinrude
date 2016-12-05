@@ -1,0 +1,16 @@
+.container
+  = render 'shared/header'
+  
+  #import_stats
+    %p= t('app_stats', import_count: @count, unique_state_count: @unique_state_count, record_count: @record_count)
+    %p Matching has been completed, and reports are available
+
+
+  .row
+    .col-xs-12.col-md-6#new-import
+      %h3 Reports
+      %ul
+        %li= link_to "Colorado", "/report_downloads/VerityTestCOreport.csv"
+        %li= link_to "Kansas", "/report_downloads/VerityTestKSreport.csv"
+        %li= link_to "Virginia", "/report_downloads/VerityTestVAreport.csv"
+        

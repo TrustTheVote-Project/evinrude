@@ -1,0 +1,2 @@
+FirstName,LastName,DateofBirth,Phone,Race,Sex,Party,RegistrationAddress,Precinct,FirstNameMatched,LastNameMatched,DOB Matched,SSNmatched,ElectionParticipationStatus,OtherStateAddress
+Linnie,Ricotta,1945-0-0,123-000-000,White (not Hispanic),MALE,Other,"4200 Quantico St.,Arlington,VA,22201",vspub-precinct-split-1,1,1,1,NA,NA,"123 Main St.,Lawrence,KS,66044"

@@ -1,9 +1,6 @@
 .container
-  %h1
-    = t('app_name')
-    %span.alpha Alpha
-  %h3 Open Technology For Voter List Integrity Assurance    
-
+  = render 'shared/header'
+  
   #description
     =t('app_description').html_safe
   
@@ -13,9 +10,9 @@
   
   .row
     .col-xs-12.col-md-6#new-import
-      %h3 Upload new voter records file    
+      %h3 Upload new Voter File Extract
       = render 'form'
     .col-xs-12.col-md-6#run-report
       %h3= t('matching_report.header')
-      %button
-        = t('matching_report.button') 
+      = link_to reports_path do 
+        %button= t('matching_report.button') 
