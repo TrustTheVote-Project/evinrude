@@ -2,6 +2,9 @@
 // Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
 @import "bootstrap";
 
+$blue: rgb(22,111,189);
+$red: rgb(212,62,37);
+
 body {
   padding-bottom: 100px;
 }
@@ -17,6 +20,20 @@ header, main {
   position: relative;
   z-index: 1;
 }
+
+h1 {
+  color: $blue;
+  .alpha {
+    color: $red;
+    font-size: .4em;
+    vertical-align: .4em;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+
 
 
 // make all images responsive by default
